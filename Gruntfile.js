@@ -312,7 +312,7 @@ module.exports = function(grunt) {
             options = grunt.config('gherkinlint.options');
 
         var args = grunt.file.expand(options.files);
-        args.unshift(path.normalize(__dirname + '/node_modules/.bin/gherkin-lint'));
+        args.unshift(path.normalize(__dirname + '/node_modules/gherkin-lint'));
         grunt.util.spawn({
             cmd: 'node',
             args: args,
